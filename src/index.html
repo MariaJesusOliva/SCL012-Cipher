@@ -6,8 +6,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <header>
+      <h1>MeToo</h1>
+    </header>
+    <article>
+     <h2>¿Qué es MeToo? </h2>
+     <p> Es una app para que mujeres y disidencias puedan compartir un mensaje en RRSS, principalmente grupos públicos de los lugares donde transitará o está para ver si alguna se encuentra cerca o hará el mismo tramo para ir juntas y mas seguras.
+        
+        
+         El código se define por el día que lo escribes.
+        Ej: para 25/02 es 25.  
+            para 03/12 es 03.
+      </p>
+    </article>
+    <main>
+      <p class="first">Define el número del código 
+        y tu texto aquí →
+        Luego clickea en cifrar o descifrar</p>
+      <h3>Código</h3><input type="number" id="offSet" class="offset.style"/>
+      <textarea name="text1" id="text1" cols="50" rows="10"></textarea>
+      <button id="cifrar" class="cifrar.style">Cifrar</button>
+      <button id="descifrar" class="descifrar.style">Descifrar</button>
+      <p class="second">Tu resultado aparecerá aquí →</p>
+      <textarea name="text1" id="text1" cols="50" rows="10"></textarea>
+      <button id="copiar" class="copiar.style">Copiar</button>
+      <button id="borrar" class="borrar.style">Borrar</button>
+
+    </main>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

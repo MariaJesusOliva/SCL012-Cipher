@@ -1,1 +1,42 @@
-/* Acá va tu código */
+body {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex: auto;
+}
+
+header {
+    align-self: flex-start;
+    width: 1440px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    background: #EC576B;
+}
+article {
+    justify-content: flex-start;
+    align-self: flex-end;
+    width: 455px;
+    height: 530px;
+    left: 0px;
+    top: 156px;
+    background: #E5E338;
+}
+
+main {
+    justify-content: flex-end;
+    width: 812px;
+    height: 530px;
+    background: #000000;
+}
+
+p.first {
+    color: #E5E338;
+}
+
+h3 {
+    color: #4EC5C1;
+}
+p.second {
+    color:  #EC576B;
+}
