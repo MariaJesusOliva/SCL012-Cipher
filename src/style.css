@@ -94,8 +94,16 @@
 .btns1 {
     height: 50px;
 }
-.cifrar.style {}
-.descifrar.style {}
+.cifrar {
+    background-color: black;
+    border: 2px solid #4EC5C1;
+    color: #4EC5C1;
+}
+.descifrar {
+    background-color: black;
+    border: 2px solid #4EC5C1;
+    color: #4EC5C1;
+}
 .box2 {
     height: 280px;
     position: relative;
@@ -116,5 +124,13 @@
 }
 #text2 {}
 .btns2 {}
-.copiar.style {}
-.borrar.style {}
+.copiar {
+    background-color: black;
+    border: 2px solid #4EC5C1;
+    color: #4EC5C1;
+}
+.borrar {
+    background-color: black;
+    border: 2px solid #4EC5C1;
+    color: #4EC5C1;
+}
