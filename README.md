@@ -108,13 +108,24 @@ La interfaz debe permitir al usuario:
   _exportado_ en el objeto global (`window`). Este objeto (`cipher`) debe
   contener dos métodos:
   - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
+    queremos mover a la derecha en el alfabeto y `string` el mensaje (text1)
     que queremos cifrar.
   - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
     queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
+    (text1) que queremos descifrar.
+    .charCodeAt devuelve nro de Unicode
+    String.fromCharCode() devuelve una cadena creada mediante el uso de una secuencia de valores Unicode especificada.
+    .toLocaleUpperCase() (transformar todo el texto a mayuscula)
+
 * `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
   o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
+  .getElementById (devuelve elemento en Id)
+  .parseInt (solo num)
+  .addEventListener (agregar evento a indicación (click))
+  .innerHTML (establece contenido HTML  de un elemento (text2)).
+  .select() (selecciona texto)
+  .execCommand (ejecutar comando (copy))
+  
 * `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
 
@@ -241,22 +252,22 @@ Esta sección está para ayudarte a llevar un control de los objetivos de aprend
   el producto.
 * [ ] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
+* [x] Usa VanillaJS.
+* [x] No utiliza `this`.
+* [x] Implementa `cipher.encode`.
+* [x] Implementa `cipher.decode`.
 * [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [x] Pasa pruebas unitarias.
+* [x] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [x] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser cifrado.
+* [x] Interfaz muestra el resultado del cifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser descifrado.
+* [x] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Funcionalidad extra o “Hacker edition”
-* [ ] Cifra/descifra minúsculas
+* [x] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [x] Permite usar un `offset` negativo.
